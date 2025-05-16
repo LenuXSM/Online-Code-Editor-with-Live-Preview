@@ -1,0 +1,106 @@
+.view-project {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d7;
+    color: white;
+    padding: 15px 20px;
+}
+
+.view-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.view-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.view-actions button, .edit-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.view-actions button:hover, .edit-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.view-content {
+    flex: 1;
+    overflow: hidden;
+}
+
+.code-tabs {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 10px;
+}
+
+.tabs button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tabs button.active {
+    background: #0078d7;
+}
+
+.tab-content {
+    flex: 1;
+    overflow: auto;
+    height: 100%;
+}
+
+.code-display {
+    background: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Consolas', 'Monaco', monospace;
+    white-space: pre-wrap;
+}
+
+.preview-only {
+    height: 100%;
+}
+
+.loading, .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.error {
+    color: #d32f2f;
+}

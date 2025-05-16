@@ -1,0 +1,95 @@
+.library-selector {
+    padding: 15px;
+}
+
+.library-selector h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.custom-library {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.custom-library input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.custom-library button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.selected-libraries, .popular-libraries {
+    margin-bottom: 20px;
+}
+
+.selected-libraries h4, .popular-libraries h4 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.selected-libraries ul, .popular-libraries ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.selected-libraries li, .popular-libraries li {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.popular-libraries li {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.popular-libraries li:hover {
+    background-color: #f0f8ff;
+}
+
+.popular-libraries li.selected {
+    background-color: #e6f3ff;
+    border-color: #0078d7;
+}
+
+.lib-name {
+    flex: 1;
+    font-weight: 500;
+}
+
+.lib-version {
+    color: #666;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.remove-lib {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.no-libraries {
+    color: #666;
+    font-style: italic;
+}
